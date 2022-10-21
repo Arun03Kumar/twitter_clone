@@ -1,0 +1,12 @@
+mixin createPostForm(userLoggedIn)
+    .postFormContainer
+        .userImageContainer
+            img(src=userLoggedIn.profilePic, alt="User's profile picture")
+        .textareaContainer
+            textarea#postTextarea(placeholder="What's happening?")
+            .buttonsContainer
+                button#submitPostButton(disabled="") Post
+        //- .textareaContainer
+        //-     form(action="/api/posts", method="post") 
+        //-         textarea#postTextarea(name="postarea", placeholder="What's happening?")
+        //-         input#submitPostButton(type="submit", value="Post")
